@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, request, send_file
 from qr_code import qrcode_generator
 
-app =  Flask( "myapps" )
+app =  Flask( __name__ )
+# app.config['TIMEOUT'] = 10
 
 @app.route('/')
 def hello_word():
@@ -46,5 +47,5 @@ def generate_qrcode():
 
 if __name__ == '__main__':
     print("MYAPPS is running!")
-    print("MYAPPS is running!")
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
+    print("MYAPPS is running!?")
