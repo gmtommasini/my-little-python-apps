@@ -17,3 +17,4 @@ LEVEL ={
     9:1,
     10:0.05
 }
+HIGH_SCORE_FILE =  'score.txt'

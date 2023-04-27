@@ -26,10 +26,11 @@ screen.onkeypress(snake.right,"Right")
 speed = 0.2 # speed (higher = slower) = level
 game_is_on = True
 
-def game_over():
+def round_over():
     global game_is_on 
-    game_is_on = False
-    scoreboard.game_over()
+    # game_is_on = False
+    scoreboard.reset()
+    snake.reset()
     print (" END GAME ")
 
 while game_is_on:
@@ -48,12 +49,12 @@ while game_is_on:
         or snake.head.xcor() <= -SCREEN_WIDTH/2-SIZE\
         or snake.head.ycor() >= SCREEN_HEIGHT/2-SIZE\
         or snake.head.ycor() <= -SCREEN_HEIGHT/2-SIZE:
-        game_over()
+        round_over()
     
     # Colision with tail
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 15:
-            game_over()
+            round_over()
 
     
 
