@@ -26,10 +26,7 @@ answer = screen.textinput(title="Name a state", prompt="Write a state's name" ).
 while len(guessed_states)<50:
   print(answer)
   if answer == 'Exit':
-    missing = []
-    for state in all_states:
-      if state not in guessed_states:
-        missing.append(state)
+    missing = [state    for state in all_states       if state not in guessed_states]
     new_data = pandas.DataFrame(missing, columns=['state'])
     new_data.to_csv('missing_states.csv')
     break
