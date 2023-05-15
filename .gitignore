@@ -130,4 +130,9 @@ dmypy.json
 
 
 # IDEs
+.idea
 .vscode
+/.vscode
+
+*old*
+*OLD*
