@@ -1,6 +1,6 @@
 import requests
 from texter import text_me
-from env import WEATHER_KEY
+from config import WEATHER_KEY
 
 '''
 openweathermap Documentation:

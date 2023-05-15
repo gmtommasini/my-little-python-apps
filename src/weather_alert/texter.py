@@ -1,4 +1,4 @@
-from env import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
+from config import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, MYNUMBER
 from twilio.rest import Client
 
 
@@ -17,7 +17,7 @@ def text_me(body):
                     .create(
                         body=body,
                         from_='+12705179282',
-                        to='+14162701529'
+                        to=MYNUMBER
                     )
 
     print(message.sid)
