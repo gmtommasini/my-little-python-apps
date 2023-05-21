@@ -1,6 +1,7 @@
 from twilio.rest import Client
 from config import  TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
 
+# Twilio documentation: https://www.twilio.com/docs/sms/quickstart/python
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 def send_sms(body):

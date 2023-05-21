@@ -2,6 +2,7 @@ import requests
 from config import news_key
 
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
+#Documentation https://newsapi.org/docs/endpoints/everything
 
 def get_news(query):
     """Return first 3 articles with the query in the title"""
