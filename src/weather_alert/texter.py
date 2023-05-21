@@ -2,7 +2,8 @@ from config import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, MYNUMBER
 from twilio.rest import Client
 
 
-# https://www.twilio.com/docs/sms/quickstart/python 
+# TWILIO documentation: https://www.twilio.com/docs/sms/quickstart/python 
+
 
 sent = True
 
