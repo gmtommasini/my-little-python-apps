@@ -6,6 +6,7 @@ from track import Track
 # SPOTITY documentation:
 # https://spotipy.readthedocs.io/en/2.22.1/
 # https://spotipy.readthedocs.io/en/2.22.1/#api-reference
+# Also: https://developer.spotify.com/dashboard
 
 redirect_uri = 'http://example.com'
 # redirect_uri = 'https://gmtommasini.github.io/my-page/'
