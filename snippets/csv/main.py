@@ -8,7 +8,7 @@
 
 import pandas
 
-data = pandas.read_csv('data.csv')
+# data = pandas.read_csv('data.csv')
 # print(data)
 # print(data["temp"])
 # print(data["condition"])
@@ -29,10 +29,14 @@ data = pandas.read_csv('data.csv')
 # print(data[data.temp > 22])
 
 # Creating DataFrame data-dictionary -> dataFrame
-data_dict={"students": ["Amy", "James", "Angela"],
+data_dict={
+  "students": ["Amy", "James", "Angela"],
   "scores": [76,56,65]  
 }
 
 df = pandas.DataFrame(data_dict)
-df.to_csv('new_file.csv')
+# df.to_csv('new_file.csv')
 print(df)
+
+list = [ row.students for index,row in df.iterrows()]
+print(list)
