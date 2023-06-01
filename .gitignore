@@ -136,3 +136,7 @@ dmypy.json
 
 *old*
 *OLD*
+
+src/static/assets/.sass-cache/
+# Ignore .sass-cache folder
+*/.sass-cache/
